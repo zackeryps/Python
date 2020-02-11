@@ -1,0 +1,44 @@
+This project was written by Zackery Salzwedel.
+This was created for Professor Cordova's CST-223 class, Winter '19 at Oregon Tech.
+This is based on 'Zuul' as it appears in the textbook 'Objects First with Java' by David J. Barnes & Michael Kolling.
+The latest Java version of this project can be officially downloaded from:
+https://www.bluej.org/objects-first/resources/projects.zip
+I also referenced the same project that a professor at another institution made available on their website:
+http://www.wou.edu/~avohland14/projects/chapter06/zuul-with-enums-v2/
+-I believe the second link is sourced from an older version of the book but with near identical code.
+
+PROJECT ISSUES:(from v1)
+- Game class does not currently support automated testing. FIXED v2
+- I remember a couple things that are missing from my reference material:
+-- A Scenario class that builds the rooms and their exits. FIXED v2
+-- Rooms held items that that a 'name' and a 'value' as string and int respectively.
+
+PROJECT NOTES:
+- Class level notes included at the bottom of class implementation.
+- Unit tests using 'if command in CommandWord' gives a DeprecationWarning
+- Things I would do if continuing this project:
+-- Fix the issues noted above. 2/3 FIXED v2
+-- Testing for CommandWord.UNKNOWN in CommandWords is clunky
+--- Is it possible to extend an enum? e.g. CommandWord.VALID.GO and CommandWord.INVALID.UNKNOWN? I don't think so. :(
+-- If a Scenario class exists, then the play loop in Game can be move to the driver. FIXED v2
+--- This would make Game more tool-like(RESTful?) and probably make automated testing easier. FIXED v2
+
+V2:
+-Added Scenario class for loading different scenarios
+-Added second scenario and scenario selection
+-Added ScenarioList collection as map name -> scenario
+-Added Scenarios collection functions to manage ScenarioList
+-Refactored Game class and Parser class to removed the need for calls for input()
+-Moved game logic flow control to driver file, Game class now supports automated testing
+-Made testing files for Game
+-TODO make Item wrapper class
+-TODO make unit testing file for Item class
+-TODO make basic testing file for Item class
+-TODO add objects of type Item to each room
+-TODO refactor Room to output contained items in verbose description
+-TODO add test to Room for item output
+
+- Things I would do if continuing this project:
+-- Fix the TODOs noted above.
+-- Testing for CommandWord.UNKNOWN in CommandWords is clunky
+--- Maybe use a script file to make a list of valid/invalid similar to ScenarioList
