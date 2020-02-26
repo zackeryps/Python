@@ -2,7 +2,7 @@
 
 Content Description. 
 
-puZuul: (sophomore assignment)
+puZuul: (assignment 2019)
 
 - Object Oriented use of Python.
 - Attempts the Strategy Pattern.
