@@ -1,8 +1,10 @@
 # Python
 
-Content Description. 
+Project Name: (motivation, created)
 
-puZuul: (assignment 2019)
+- Content description. 
+
+puZuul: (term project, 2019)
 
 - Object Oriented use of Python.
 - Attempts the Strategy Pattern.
